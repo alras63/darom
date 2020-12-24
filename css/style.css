@@ -486,3 +486,31 @@ footer  .map{
     width: 45%;
     height: 420px;
 }
+
+.sidebar_menu .active {
+    background-color: #E93A2F;
+    color: #fff;
+}
+
+.sidebar_menu li {
+    transition: 0.5s;
+}
+
+.sidebar_menu li:hover {
+    background-color: #E93A2F;
+}
+
+.sidebar_menu li:hover img {
+    filter: invert(1);
+}
+
+.sidebar_menu li:hover a span {
+    color: #fff;
+}
+
+.sidebar_menu .active img {
+    filter: invert(1);
+}
+.sidebar_menu .active a span {
+    color: #fff;
+}
