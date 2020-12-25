@@ -10,10 +10,10 @@ img {
     max-width: 100%;
 }
 
-/* * {
-    border: 2px solid red;
+* {
+ 
     box-sizing: border-box;
-} */
+}
 .container {
     max-width: 1048px;
     width: 100%;
@@ -587,6 +587,7 @@ footer  .map{
 
     .adress {
         text-align: center;
+        margin-top: 15px;
     }
     footer {
         height: auto;
@@ -612,6 +613,31 @@ footer  .map{
     #callback .container {
         flex-direction: column;
         text-align: center;
+        height: auto;
     }
-    
+
+
+    .adress p {
+        text-align: center;
+    }
+
+    .work_time .phone {
+        text-align: center;
+    }
+
+    .link_btn {
+        float: none !important;
+    }
+   
+}
+
+@media screen and (max-width: 375px) {
+    #advantages .columns .item-1, #advantages .columns .item-2 {
+        flex-direction: column;
+        max-width: 320px;
+    }
+
+    #advantages .columns .desc {
+        max-width: 270px;
+    }
 }
