@@ -6,10 +6,19 @@
     margin: 0px 0px;
 }
 
+img {
+    max-width: 100%;
+}
+
+/* * {
+    border: 2px solid red;
+    box-sizing: border-box;
+} */
 .container {
     max-width: 1048px;
     width: 100%;
     margin: 0 auto;
+    padding: 0 20px
 }
 
 html {
@@ -273,6 +282,7 @@ input[type="search"] {
     background-color: #ffffff;
     display: inline-flex;
     max-width: 256px;
+    flex-shrink: 0;
 }
 
 .sidebar ul {
@@ -360,9 +370,10 @@ input[type="search"] {
 }
 
 .catalog-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
     grid-gap: 5px;
+    justify-content: center;
 }
 
 #callback {
@@ -513,4 +524,94 @@ footer  .map{
 }
 .sidebar_menu .active a span {
     color: #fff;
+}
+
+.no-pc {
+    display: none;
+}
+
+@media screen and (max-width: 970px) {
+    .no-tablet {
+        display: none !important;
+    }
+
+    .catalog-item {
+      padding: 20px
+    }
+
+    #advantages .columns {
+        flex-direction: column;
+    }
+
+    footer .col-1, .col-2 {
+        width: 100%;
+    }
+
+    .no-pc {
+        display: block;
+    }
+}
+@media screen and (max-width: 470px) {
+    .no-mobile {
+        display: none !important;
+    }
+
+    .catalog-item {
+        max-width: 155px;
+    }
+
+    footer .columns {
+        flex-direction: column;
+    }
+    footer .col-1, .col-2 {
+       height: auto;
+       justify-content: center;
+       text-align: center;
+       align-items: center;
+       padding-top: 10px;
+       padding-bottom: 10px
+    }
+
+    .specials-list {
+        display: inline-flex;
+        flex-direction: column;
+        grid-gap: 15px;
+    }
+    #banner .image-container {
+        background-position: -300px center;
+    }
+
+    .link_btn {
+        padding: 8px 16px;
+    }
+
+    .adress {
+        text-align: center;
+    }
+    footer {
+        height: auto;
+    }
+
+    .main-text h1 {
+        font-size: 18px;
+    }
+
+    .main-text .big {
+        font-size: 24px;
+        line-height: 33px
+    }
+
+    .main-text .afterheader {
+        margin-bottom: 10px;
+    }
+    #callback {
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    #callback .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
 }
