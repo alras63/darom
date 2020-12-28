@@ -632,6 +632,41 @@ footer  .map{
 }
 
 @media screen and (max-width: 375px) {
+    
+    #advantages .columns .title {
+        font-size: 16px;
+        line-height: 20px;
+        margin-top: 0;
+    }
+    #advantages .columns .desc {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    #advantages .columns img {
+        max-width: 90px;
+        max-height: 135px;
+    }
+
+    #advantages .container {
+        padding: 0 5px;
+    }
+
+    #callback .link_btn {
+        margin-top: 20px;
+    }
+
+    footer {
+        padding: 30px 0;
+    }
+
+    footer img {
+        margin-bottom: 20px;
+    }
+}
+
+
+@media screen and (max-width: 360px) {
     #advantages .columns .item-1, #advantages .columns .item-2 {
         flex-direction: column;
         max-width: 320px;
