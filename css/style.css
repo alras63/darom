@@ -653,7 +653,7 @@ footer  .map{
     }
 
     .catalog-list {
-        margin-left: 0;
+        margin-left: 10px;
     }
    
 }
@@ -702,4 +702,18 @@ footer  .map{
     #advantages .columns .desc {
         max-width: 270px;
     } */
+    .catalog-list {
+        margin-left: 0px;
+    }
+
+    #catalog .container {
+        padding: 0 10px;
+    }
+    .catalog-item {
+        margin-right: 3px;
+        max-width: 48%;
+    }
+    .catalog-item:nth-child(2n) {
+        margin-right: 0;
+    }
 }
