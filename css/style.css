@@ -596,7 +596,10 @@ footer  .map{
         /* grid-gap: 15px; */
     }
     #banner .image-container {
-        background-position: -300px center;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.15) 44.54%, rgba(0, 0, 0, 0.81) 100%), url('../assets/bg.png');
+        background-repeat: unset;
+        background-size: cover;
+        background-position: -400px center;
     }
 
     .link_btn {
@@ -609,6 +612,10 @@ footer  .map{
     }
     footer {
         height: auto;
+    }
+
+    .main-text {
+        margin-top: 40px;
     }
 
     .main-text h1 {
@@ -689,6 +696,33 @@ footer  .map{
 
     footer img {
         margin-bottom: 20px;
+    }
+    
+    #catalog {
+        padding-top: 35px;
+    }
+
+    .catalog-item {
+        padding: 3px;
+    }
+
+    .catalog-item .title {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    .catalog-item img {
+        margin-top: 20px;
+    }
+
+    .afterheader {
+        font-size: 12px;
+        max-width: 235px;
+    }
+
+    .afterheader b {
+        font-weight: normal;
     }
 }
 
