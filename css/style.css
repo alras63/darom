@@ -94,6 +94,9 @@ header {
     border-bottom: 1px dashed #828282;
 }
 
+.city_select li {
+    margin-bottom: 10px;
+}
 .dflex {
     display: flex;
 }
@@ -105,7 +108,7 @@ header {
     list-style: none;
     display: flex;
     flex-direction: column;
-    grid-gap: 10px;
+    /* grid-gap: 10px; */
 }
 
 .city_select {
@@ -321,7 +324,7 @@ input[type="search"] {
 
 #catalog .container {
     display: flex;
-    grid-gap: 10px;
+    /* grid-gap: 10px; */
     align-items: flex-start;
 }
 
@@ -367,14 +370,28 @@ input[type="search"] {
     font-size: 16px;
     line-height: 22px;
     color: #222222;
+    text-align: center;
+}
+
+.catalog-item {
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.specials-item {
+    margin-bottom: 10px;
+    margin-right: 10px;
 }
 
 .catalog-list {
     display: flex;
     flex-wrap: wrap;
-    grid-gap: 5px;
-    justify-content: center;
+    /* grid-gap: 5px; */
+    justify-content: flex-start;
+    margin-left: 30px;
 }
+
+
 
 #callback {
     background: #E93A2F;
@@ -402,7 +419,7 @@ input[type="search"] {
 }
 #advantages .columns {
     display: flex;
-    grid-gap: 70px;
+    /* grid-gap: 70px; */
 }
 
 #advantages .columns>div {
@@ -464,7 +481,7 @@ footer .col-1, .col-2{
 
 footer .columns {
     display: flex;
-    grid-gap: 60px;
+    /* grid-gap: 60px; */
 }
 
 footer .work_time, footer .work_time .phone {
@@ -575,7 +592,7 @@ footer  .map{
     .specials-list {
         display: inline-flex;
         flex-direction: column;
-        grid-gap: 15px;
+        /* grid-gap: 15px; */
     }
     #banner .image-container {
         background-position: -300px center;
@@ -628,6 +645,10 @@ footer  .map{
     .link_btn {
         float: none !important;
     }
+
+    .catalog-list {
+        margin-left: 0;
+    }
    
 }
 
@@ -667,12 +688,12 @@ footer  .map{
 
 
 @media screen and (max-width: 360px) {
-    #advantages .columns .item-1, #advantages .columns .item-2 {
+    /* #advantages .columns .item-1, #advantages .columns .item-2 {
         flex-direction: column;
         max-width: 320px;
     }
 
     #advantages .columns .desc {
         max-width: 270px;
-    }
+    } */
 }
